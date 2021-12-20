@@ -10,7 +10,7 @@ class Recommendation:
         self.data = pickle.load(open('pickle/processed_data.pkl','rb'))
         self.user_final_rating = pickle.load(open('pickle/user_final_rating.pkl','rb'))
         self.model = pickle.load(open('pickle/logistic_regression.pkl','rb'))
-        self.raw_data = pd.read_csv("d:/sample30.csv")
+        self.raw_data = pd.read_csv("d://sample30.csv")
         self.data = pd.concat([self.raw_data[['id','name','brand','categories','manufacturer']],self.data], axis=1)
         
         
